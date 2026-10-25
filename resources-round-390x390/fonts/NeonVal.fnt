@@ -1,0 +1,16 @@
+info face="JetBrains Mono Medium" size=-20 bold=0 italic=0 charset="" unicode=1 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=1,1 outline=0
+common lineHeight=27 base=21 scaleW=64 scaleH=50 pages=1 packed=0 alphaChnl=1 redChnl=0 greenChnl=0 blueChnl=0
+page id=0 file="NeonVal_0.png"
+chars count=12
+char id=48    x=0     y=0     width=10    height=16    xoffset=1     yoffset=6     xadvance=12    page=0 chnl=15
+char id=49    x=24    y=17    width=10    height=15    xoffset=1     yoffset=6     xadvance=12    page=0 chnl=15
+char id=50    x=35    y=17    width=10    height=15    xoffset=1     yoffset=6     xadvance=12    page=0 chnl=15
+char id=51    x=11    y=0     width=10    height=16    xoffset=1     yoffset=6     xadvance=12    page=0 chnl=15
+char id=52    x=0     y=34    width=10    height=15    xoffset=1     yoffset=6     xadvance=12    page=0 chnl=15
+char id=53    x=22    y=0     width=10    height=16    xoffset=1     yoffset=6     xadvance=12    page=0 chnl=15
+char id=54    x=33    y=0     width=10    height=16    xoffset=1     yoffset=6     xadvance=12    page=0 chnl=15
+char id=55    x=11    y=34    width=10    height=15    xoffset=1     yoffset=6     xadvance=12    page=0 chnl=15
+char id=56    x=0     y=17    width=10    height=16    xoffset=1     yoffset=6     xadvance=12    page=0 chnl=15
+char id=57    x=22    y=34    width=10    height=15    xoffset=1     yoffset=6     xadvance=12    page=0 chnl=15
+char id=37    x=11    y=17    width=12    height=16    xoffset=0     yoffset=6     xadvance=12    page=0 chnl=15
+char id=45    x=33    y=34    width=8     height=3     xoffset=2     yoffset=13    xadvance=12    page=0 chnl=15

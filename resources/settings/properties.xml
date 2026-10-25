@@ -1,0 +1,13 @@
+<properties xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <!-- curveMode: 0 = indicators (curves fill to a metric), 1 = decorative (always full, no readouts) -->
+    <property id="curveMode" type="number">0</property>
+    <!-- leftMetric / rightMetric: 0 = steps to goal, 1 = active minutes today, 2 = battery (Metrics.mc) -->
+    <property id="leftMetric" type="number">1</property>
+    <property id="rightMetric" type="number">2</property>
+    <!-- palette: curve color pair, index into Theme.PALETTES (0 = turquoise/pink design default) -->
+    <property id="palette" type="number">0</property>
+    <!-- langMode: 0 = Auto (system), 1 = English, 2 = Russian -->
+    <property id="langMode" type="number">0</property>
+    <!-- blink: dots blink for ~10 s after each wake -->
+    <property id="blink" type="boolean">true</property>
+</properties>

@@ -1,0 +1,88 @@
+<strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <!-- Russian (rus) locale bundle.
+
+         The in-face strings carry IDENTICAL values to resources/strings/ on
+         purpose: the plain ids are always English and the *Ru ids are always
+         Russian, on ANY device locale, so the in-app Language setting can force
+         either language. They are mirrored here (rather than left to fall back)
+         only to satisfy the compiler's "every id translated for declared
+         language" check and keep the build warning-free.
+
+         Only the settings-UI labels genuinely differ by locale (the app name
+         is "Fun Bra" in both). -->
+
+    <string id="AppName">Fun Bra</string>
+
+    <!-- Curve captions (UPPERCASE — drawn with the NeonCap subset) -->
+    <string id="capSteps">STEPS</string>
+    <string id="capActive">ACTIVE</string>
+    <string id="capBattery">BATTERY</string>
+    <string id="capStepsRu">ШАГИ</string>
+    <string id="capActiveRu">АКТИВН.</string>
+    <string id="capBatteryRu">ЗАРЯД</string>
+
+    <!-- Weekday names (1=Sun..7=Sat, so dow0=Sunday). UPPERCASE — NeonDate subset. -->
+    <string id="dow0">SUNDAY</string>
+    <string id="dow1">MONDAY</string>
+    <string id="dow2">TUESDAY</string>
+    <string id="dow3">WEDNESDAY</string>
+    <string id="dow4">THURSDAY</string>
+    <string id="dow5">FRIDAY</string>
+    <string id="dow6">SATURDAY</string>
+
+    <string id="dow0Ru">ВОСКРЕСЕНЬЕ</string>
+    <string id="dow1Ru">ПОНЕДЕЛЬНИК</string>
+    <string id="dow2Ru">ВТОРНИК</string>
+    <string id="dow3Ru">СРЕДА</string>
+    <string id="dow4Ru">ЧЕТВЕРГ</string>
+    <string id="dow5Ru">ПЯТНИЦА</string>
+    <string id="dow6Ru">СУББОТА</string>
+
+    <!-- Month abbreviations (1=Jan..12=Dec, mon0=January) -->
+    <string id="mon0">JAN</string>
+    <string id="mon1">FEB</string>
+    <string id="mon2">MAR</string>
+    <string id="mon3">APR</string>
+    <string id="mon4">MAY</string>
+    <string id="mon5">JUN</string>
+    <string id="mon6">JUL</string>
+    <string id="mon7">AUG</string>
+    <string id="mon8">SEP</string>
+    <string id="mon9">OCT</string>
+    <string id="mon10">NOV</string>
+    <string id="mon11">DEC</string>
+
+    <string id="mon0Ru">ЯНВ</string>
+    <string id="mon1Ru">ФЕВ</string>
+    <string id="mon2Ru">МАР</string>
+    <string id="mon3Ru">АПР</string>
+    <string id="mon4Ru">МАЙ</string>
+    <string id="mon5Ru">ИЮН</string>
+    <string id="mon6Ru">ИЮЛ</string>
+    <string id="mon7Ru">АВГ</string>
+    <string id="mon8Ru">СЕН</string>
+    <string id="mon9Ru">ОКТ</string>
+    <string id="mon10Ru">НОЯ</string>
+    <string id="mon11Ru">ДЕК</string>
+
+    <!-- Settings UI labels (these follow the device/phone language) -->
+    <string id="setTitle">Настройки</string>
+    <string id="setCurves">Кривые</string>
+    <string id="setCurvesInd">Индикаторы</string>
+    <string id="setCurvesDeco">Декор</string>
+    <string id="setLeft">Левая кривая</string>
+    <string id="setRight">Правая кривая</string>
+    <string id="setMetricSteps">Шаги к цели</string>
+    <string id="setMetricActive">Активные минуты за день</string>
+    <string id="setMetricBattery">Заряд</string>
+    <string id="setPalette">Цвета</string>
+    <string id="setPal0">Бирюза / розовый</string>
+    <string id="setPal1">Лайм / фиолетовый</string>
+    <string id="setPal2">Оранжевый / голубой</string>
+    <string id="setPal3">Алый / золотой</string>
+    <string id="setLang">Язык</string>
+    <string id="setLangAuto">Авто</string>
+    <string id="setLangEn">Английский</string>
+    <string id="setLangRu">Русский</string>
+    <string id="setBlink">Мигание точек</string>
+</strings>

@@ -1,0 +1,42 @@
+<settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <!-- Mobile (Garmin Connect / Express) settings. The on-device menu in
+         AppBase.getSettingsView() reads/writes the SAME properties. -->
+    <setting propertyKey="@Properties.curveMode" title="@Strings.setCurves">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.setCurvesInd</listEntry>
+            <listEntry value="1">@Strings.setCurvesDeco</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.leftMetric" title="@Strings.setLeft">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.setMetricSteps</listEntry>
+            <listEntry value="1">@Strings.setMetricActive</listEntry>
+            <listEntry value="2">@Strings.setMetricBattery</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.rightMetric" title="@Strings.setRight">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.setMetricSteps</listEntry>
+            <listEntry value="1">@Strings.setMetricActive</listEntry>
+            <listEntry value="2">@Strings.setMetricBattery</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.palette" title="@Strings.setPalette">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.setPal0</listEntry>
+            <listEntry value="1">@Strings.setPal1</listEntry>
+            <listEntry value="2">@Strings.setPal2</listEntry>
+            <listEntry value="3">@Strings.setPal3</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.langMode" title="@Strings.setLang">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.setLangAuto</listEntry>
+            <listEntry value="1">@Strings.setLangEn</listEntry>
+            <listEntry value="2">@Strings.setLangRu</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.blink" title="@Strings.setBlink">
+        <settingConfig type="boolean" />
+    </setting>
+</settings>

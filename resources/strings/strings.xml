@@ -1,0 +1,76 @@
+<strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <string id="AppName">Fun Bra</string>
+
+    <!-- Curve captions (UPPERCASE — drawn with the NeonCap subset) -->
+    <string id="capSteps">STEPS</string>
+    <string id="capActive">ACTIVE</string>
+    <string id="capBattery">BATTERY</string>
+    <string id="capStepsRu">ШАГИ</string>
+    <string id="capActiveRu">АКТИВН.</string>
+    <string id="capBatteryRu">ЗАРЯД</string>
+
+    <!-- Weekday names (1=Sun..7=Sat, so dow0=Sunday). UPPERCASE — NeonDate subset. -->
+    <string id="dow0">SUNDAY</string>
+    <string id="dow1">MONDAY</string>
+    <string id="dow2">TUESDAY</string>
+    <string id="dow3">WEDNESDAY</string>
+    <string id="dow4">THURSDAY</string>
+    <string id="dow5">FRIDAY</string>
+    <string id="dow6">SATURDAY</string>
+
+    <string id="dow0Ru">ВОСКРЕСЕНЬЕ</string>
+    <string id="dow1Ru">ПОНЕДЕЛЬНИК</string>
+    <string id="dow2Ru">ВТОРНИК</string>
+    <string id="dow3Ru">СРЕДА</string>
+    <string id="dow4Ru">ЧЕТВЕРГ</string>
+    <string id="dow5Ru">ПЯТНИЦА</string>
+    <string id="dow6Ru">СУББОТА</string>
+
+    <!-- Month abbreviations (1=Jan..12=Dec, mon0=January) -->
+    <string id="mon0">JAN</string>
+    <string id="mon1">FEB</string>
+    <string id="mon2">MAR</string>
+    <string id="mon3">APR</string>
+    <string id="mon4">MAY</string>
+    <string id="mon5">JUN</string>
+    <string id="mon6">JUL</string>
+    <string id="mon7">AUG</string>
+    <string id="mon8">SEP</string>
+    <string id="mon9">OCT</string>
+    <string id="mon10">NOV</string>
+    <string id="mon11">DEC</string>
+
+    <string id="mon0Ru">ЯНВ</string>
+    <string id="mon1Ru">ФЕВ</string>
+    <string id="mon2Ru">МАР</string>
+    <string id="mon3Ru">АПР</string>
+    <string id="mon4Ru">МАЙ</string>
+    <string id="mon5Ru">ИЮН</string>
+    <string id="mon6Ru">ИЮЛ</string>
+    <string id="mon7Ru">АВГ</string>
+    <string id="mon8Ru">СЕН</string>
+    <string id="mon9Ru">ОКТ</string>
+    <string id="mon10Ru">НОЯ</string>
+    <string id="mon11Ru">ДЕК</string>
+
+    <!-- Settings UI labels (these follow the device/phone language) -->
+    <string id="setTitle">Settings</string>
+    <string id="setCurves">Curves</string>
+    <string id="setCurvesInd">Indicators</string>
+    <string id="setCurvesDeco">Decorative</string>
+    <string id="setLeft">Left curve</string>
+    <string id="setRight">Right curve</string>
+    <string id="setMetricSteps">Steps to goal</string>
+    <string id="setMetricActive">Active minutes today</string>
+    <string id="setMetricBattery">Battery</string>
+    <string id="setPalette">Colors</string>
+    <string id="setPal0">Turquoise / pink</string>
+    <string id="setPal1">Lime / violet</string>
+    <string id="setPal2">Orange / blue</string>
+    <string id="setPal3">Scarlet / gold</string>
+    <string id="setLang">Language</string>
+    <string id="setLangAuto">Auto</string>
+    <string id="setLangEn">English</string>
+    <string id="setLangRu">Russian</string>
+    <string id="setBlink">Blinking dots</string>
+</strings>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Неон-кольца</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500&amp;display=swap">
+<style>
+body{margin:0}
+.glowA{filter:drop-shadow(0 0 10px #3EE6E0)}
+.glowB{filter:drop-shadow(0 0 10px #FF4FA3)}
+.blink{animation:blink 2s steps(1) infinite}
+@keyframes blink{0%{opacity:1}50%{opacity:0.25}}
+</style>
+</helmet>
+<div style="width: 450px; height: 450px; border-radius: 50%; overflow: hidden; background: #050507; font-family: 'JetBrains Mono', monospace">
+<svg width="450" height="450" viewBox="0 0 450 450" role="img" aria-label="Неоновый циферблат 10:09: активность 72%, заряд 64%">
+<text x="225" y="96" text-anchor="middle" font-size="13" font-weight="500" letter-spacing="3" fill="#8C8CA0">СУББОТА · 24 ОКТ</text>
+<text x="225" y="162" text-anchor="middle" font-size="62" font-weight="300" fill="#F4F4FA">10:09</text>
+<svg x="45" y="70" width="360" height="360" viewBox="0 0 512 512">
+<path d="M55 155 C-5 215 15 330 110 370 C190 400 255 330 256 238" fill="none" stroke="#1C1C26" stroke-width="34" stroke-linecap="round"></path>
+<path d="M457 155 C517 215 497 330 402 370 C322 400 257 330 256 238" fill="none" stroke="#1C1C26" stroke-width="34" stroke-linecap="round"></path>
+<path class="glowA" d="M55 155 C-5 215 15 330 110 370 C190 400 255 330 256 238" fill="none" stroke="{{left}}" stroke-width="34" stroke-linecap="round" pathLength="100" stroke-dasharray="{{leftPct}} 100"></path>
+<path class="glowB" d="M457 155 C517 215 497 330 402 370 C322 400 257 330 256 238" fill="none" stroke="{{right}}" stroke-width="34" stroke-linecap="round" pathLength="100" stroke-dasharray="{{rightPct}} 100"></path>
+<circle class="blink" cx="120" cy="283" r="22" fill="{{left}}"></circle>
+<circle class="blink" cx="392" cy="283" r="22" fill="{{right}}"></circle>
+</svg>
+<text x="129" y="384" text-anchor="middle" font-size="11" font-weight="500" letter-spacing="2" fill="#8C8CA0">АКТИВН.</text>
+<text x="129" y="404" text-anchor="middle" font-size="18" font-weight="500" fill="{{left}}">{{leftPct}}%</text>
+<text x="321" y="384" text-anchor="middle" font-size="11" font-weight="500" letter-spacing="2" fill="#8C8CA0">ЗАРЯД</text>
+<text x="321" y="404" text-anchor="middle" font-size="18" font-weight="500" fill="{{right}}">{{rightPct}}%</text>
+</svg>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"left":{"editor":"color","default":"#3EE6E0"},"right":{"editor":"color","default":"#FF4FA3"},"leftPct":{"editor":"number","default":72},"rightPct":{"editor":"number","default":64},"$preview":{"width":450,"height":450}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+left: this.props.left ?? '#3EE6E0',
+right: this.props.right ?? '#FF4FA3',
+leftPct: this.props.leftPct ?? 72,
+rightPct: this.props.rightPct ?? 64
+};
+}
+}
+</script>
+</body>
+</html>
