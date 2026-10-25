@@ -154,7 +154,7 @@ Notes:
 ## Project structure
 
 ```
-manifest.xml                 watchface app: 23 AMOLED products, languages (eng+rus), minApiLevel 5.1.0
+manifest.xml                 watchface app: 40 AMOLED products, languages (eng+rus), minApiLevel 5.1.0
 monkey.jungle                build config (project.typecheck = strict)
 source/
   FunBraApp.mc               AppBase: entry point, getInitialView, getSettingsView

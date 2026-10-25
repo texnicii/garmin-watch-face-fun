@@ -51,6 +51,18 @@ monkeyc -f monkey.jungle -o bin/wf_funbra.iq -y developer_key -e -r -w
 Check one device per resolution bucket before calling a change done: `venu3`
 (454), `fr265` (416), `venu3s` (390), `fr265s` (360), `venux1` (448×486 rect).
 
+### Products (`manifest.xml`)
+
+The 40 products are every installed device that is **AMOLED**, supports
+watch faces, lists Russian, has API ≥ 5.1 and a screen we have font buckets
+for (round 360/390/416/454, or `venux1`). Find candidates from each device's
+`~/Library/Application Support/Garmin/ConnectIQ/Devices/<id>/compiler.json`
+(`displayType`, `resolution`, `appTypes`, `partNumbers[].connectIQVersion`).
+Deliberately **excluded**: MIP watches (fēnix 7/8 Solar, FR 255/955, Enduro 3:
+218–280 px screens need new font buckets, and their 64-color palette bands the
+pre-mixed glow), monochrome Instinct 3 Solar / Instinct E, and Edge/eTrex (no
+watch faces). Venu 2 family etc. are below API 5.1 and not installed.
+
 Useful `monkeyc` flags: `-d <device>`, `-f <jungle>`, `-o <out>`, `-y <key>`,
 `-l <0..3>` typecheck (0 off → 3 strict), `-O <0..3/p/z>` optimize, `-r` release
 (strip debug), `-e` package app (.iq), `-w` warnings, `-g` debug, `-t` unit tests.
@@ -61,7 +73,7 @@ Useful `monkeyc` flags: `-d <device>`, `-f <jungle>`, `-o <out>`, `-y <key>`,
 ## Project layout
 
 ```
-manifest.xml              # app id/type=watchface, 23 AMOLED products, languages, minApiLevel=5.1.0
+manifest.xml              # app id/type=watchface, 40 AMOLED products, languages, minApiLevel=5.1.0
 monkey.jungle             # build config; project.typecheck=strict
 source/
   FunBraApp.mc            # AppBase: getInitialView(), getSettingsView(), onSettingsChanged()
