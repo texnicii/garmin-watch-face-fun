@@ -8,7 +8,27 @@ minutes, battery), with a caption and percent underneath. Or switch them to a
 purely decorative mode.
 
 Bilingual **English / Русский**. Design: Claude Design artboard
-**“01 · Неон-кольца”** (Neon Rings).
+**“Neon Rings”**.
+
+![Fun Bra on a Venu 3](images/cover-500.png)
+
+> **Not in the Garmin Store.** This watch face turned out to be too revealing
+> for the Garmin Connect IQ Store, even though there's nothing lewd about it.
+> You can still install the Connect IQ SDK yourself and build it from source:
+> see [Build & run](#build--run) and
+> [Install on a real watch](#install-on-a-real-watch-usb-cable).
+>
+
+## Screenshots
+
+| | |
+|---|---|
+| [![Steps + active minutes, turquoise / pink](images/screen-01.png)](images/screen-01.png) | [![Orange / blue color pair](images/screen-02.png)](images/screen-02.png) |
+| Steps + active minutes, turquoise / pink | Orange / blue color pair |
+| [![Battery on both curves](images/screen-03.png)](images/screen-03.png) | [![Decorative mode: full curves, no readouts](images/screen-04.png)](images/screen-04.png) |
+| Battery on both curves | Decorative mode: full curves, no readouts |
+
+The original design mockup:
 
 ![Neon Rings — design reference](design/neon-rings/reference.png)
 
@@ -177,7 +197,7 @@ resources-rus/               Russian bundle
 resources-round-<WxH>/       per-resolution font buckets (360/390/416; 454 = base)
 tools/fonts/                 bitmap-font generator (JetBrains Mono → NeonTime/Date/Cap/Val)
 design/neon-rings/           the original design export + reference.png
-GARMIN_STORE.md              store listing (EN/RU) + changelog
+images/                      cover + screenshots from the simulator
 ```
 
 ## Custom fonts
@@ -209,15 +229,13 @@ are in [`CLAUDE.md`](CLAUDE.md) and the `neon-rings-face` skill.
   pairs, blinking dots, full AOD path, EN/RU + language setting, on-watch and phone
   settings. Builds clean (`-l 3 -w`) for every resolution tier and packages to
   `.iq` for all listed devices.
-- ⏳ **Next**: store screenshots captured from the simulator (`images/`), and
-  on-device testing.
+- ✅ Screenshots captured from the simulator ([`images/`](images/)).
+- ⏳ **Next**: on-device testing.
 
 ## Documentation
 
 - [`CLAUDE.md`](CLAUDE.md): toolchain, build commands, AMOLED rules, conventions
-- [`GARMIN_STORE.md`](GARMIN_STORE.md): store listing text + changelog
 - `neon-rings-face` skill (`.claude/skills/neon-rings-face/`): the visual source of truth
-- `garmin-store-listing` skill (`.claude/skills/garmin-store-listing/`): store card + images
 
 ## License
 
