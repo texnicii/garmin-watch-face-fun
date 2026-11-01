@@ -21,6 +21,9 @@
             <listEntry value="2">@Strings.setMetricBattery</listEntry>
         </settingConfig>
     </setting>
+    <setting propertyKey="@Properties.readouts" title="@Strings.setReadouts">
+        <settingConfig type="boolean" />
+    </setting>
     <setting propertyKey="@Properties.palette" title="@Strings.setPalette">
         <settingConfig type="list">
             <listEntry value="0">@Strings.setPal0</listEntry>

@@ -106,6 +106,8 @@ the real percent (capped at 999). Defaults: left = 1 (design caption
 BATTERY/ЗАРЯД.
 
 Decorative mode (`curveMode` = 1): both curves at 100%, no captions/values.
+The `readouts` setting (boolean, on by default) hides just the captions +
+values in indicator mode — the curves keep showing progress.
 
 ## AMOLED always-on (AOD) — required
 

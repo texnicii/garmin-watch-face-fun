@@ -1,6 +1,8 @@
 <properties xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
     <!-- curveMode: 0 = indicators (curves fill to a metric), 1 = decorative (always full, no readouts) -->
     <property id="curveMode" type="number">0</property>
+    <!-- readouts: show captions + percent values under the curves (indicator mode only) -->
+    <property id="readouts" type="boolean">true</property>
     <!-- leftMetric / rightMetric: 0 = steps to goal, 1 = active minutes today, 2 = battery (Metrics.mc) -->
     <property id="leftMetric" type="number">1</property>
     <property id="rightMetric" type="number">2</property>

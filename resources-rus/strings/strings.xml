@@ -72,6 +72,7 @@
     <string id="setCurvesDeco">Декор</string>
     <string id="setLeft">Левая кривая</string>
     <string id="setRight">Правая кривая</string>
+    <string id="setReadouts">Подписи и значения</string>
     <string id="setMetricSteps">Шаги к цели</string>
     <string id="setMetricActive">Активные минуты за день</string>
     <string id="setMetricBattery">Заряд</string>

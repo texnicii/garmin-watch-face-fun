@@ -8,12 +8,12 @@ module FaceRenderer {
 
     const TOP_CENTER = Graphics.TEXT_JUSTIFY_CENTER;
 
-    //! `indicators` false = decorative mode (curves full, no captions/values);
-    //! `dimDots` = the 25% phase of the blink.
+    //! `readouts` false = no captions/values (decorative mode or the readouts
+    //! setting off); `dimDots` = the 25% phase of the blink.
     function draw(dc as Graphics.Dc, layout as Layout, data as FaceData,
                   curves as CurveLayer, fonts as Array<Graphics.FontType>,
                   colL as Number, colR as Number,
-                  indicators as Boolean, dimDots as Boolean) as Void {
+                  readouts as Boolean, dimDots as Boolean) as Void {
         if (dc has :setAntiAlias) { dc.setAntiAlias(true); }
         dc.setColor(Theme.TIME, Theme.BACKGROUND);
         dc.clear();
@@ -37,7 +37,7 @@ module FaceRenderer {
         dc.setColor(Theme.TIME, Graphics.COLOR_TRANSPARENT);
         text(dc, layout.cx, layout.yTime, fTime, data.timeText);
 
-        if (indicators) {
+        if (readouts) {
             dc.setColor(Theme.TEXT_DIM, Graphics.COLOR_TRANSPARENT);
             text(dc, layout.xLeft, layout.yCap, fCap, data.capL);
             text(dc, layout.xRight, layout.yCap, fCap, data.capR);

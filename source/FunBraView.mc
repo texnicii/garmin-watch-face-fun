@@ -28,6 +28,7 @@ class FunBraView extends WatchUi.WatchFace {
 
     // User-setting-driven caches (rebuilt by applySettings)
     private var _indicators as Boolean = true;
+    private var _showReadouts as Boolean = true;
     private var _metricL as Number = Metrics.ACTIVE;
     private var _metricR as Number = Metrics.BATTERY;
     private var _colL as Number = 0;
@@ -84,6 +85,7 @@ class FunBraView extends WatchUi.WatchFace {
     //! change) — never called from the hot path.
     public function applySettings() as Void {
         _indicators = SettingsMenu.getNum("curveMode", 0) == 0;
+        _showReadouts = SettingsMenu.getBool("readouts", true);
         _metricL = SettingsMenu.getNum("leftMetric", Metrics.ACTIVE);
         _metricR = SettingsMenu.getNum("rightMetric", Metrics.BATTERY);
         var palette = SettingsMenu.getNum("palette", 0);
@@ -143,7 +145,7 @@ class FunBraView extends WatchUi.WatchFace {
         var data = buildData();
         if (_isAwake) {
             FaceRenderer.draw(dc, layout, data, _curves, _fonts, _colL, _colR,
-                              _indicators, _dimDots);
+                              _indicators and _showReadouts, _dimDots);
         } else {
             AodRenderer.draw(dc, layout, data, _fonts, _indicators);
         }
@@ -181,10 +183,12 @@ class FunBraView extends WatchUi.WatchFace {
             var pr = Metrics.percent(_metricR, am);
             d.pctL = clamp(pl);
             d.pctR = clamp(pr);
-            d.valL = ((pl > 999) ? 999 : pl).format("%d") + "%";
-            d.valR = ((pr > 999) ? 999 : pr).format("%d") + "%";
-            d.capL = caption(_metricL);
-            d.capR = caption(_metricR);
+            if (_showReadouts) {
+                d.valL = ((pl > 999) ? 999 : pl).format("%d") + "%";
+                d.valR = ((pr > 999) ? 999 : pr).format("%d") + "%";
+                d.capL = caption(_metricL);
+                d.capR = caption(_metricR);
+            }
         } else {
             d.pctL = 100;
             d.pctR = 100;

@@ -60,6 +60,7 @@
     <string id="setCurvesDeco">Decorative</string>
     <string id="setLeft">Left curve</string>
     <string id="setRight">Right curve</string>
+    <string id="setReadouts">Captions &amp; values</string>
     <string id="setMetricSteps">Steps to goal</string>
     <string id="setMetricActive">Active minutes today</string>
     <string id="setMetricBattery">Battery</string>

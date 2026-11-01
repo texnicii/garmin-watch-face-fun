@@ -16,6 +16,8 @@ class SettingsMenu extends WatchUi.Menu2 {
         addItem(new WatchUi.MenuItem(str($.Rez.Strings.setCurves), curvesLabel(), :curveMode, null));
         addItem(new WatchUi.MenuItem(str($.Rez.Strings.setLeft), metricLabel("leftMetric"), :leftMetric, null));
         addItem(new WatchUi.MenuItem(str($.Rez.Strings.setRight), metricLabel("rightMetric"), :rightMetric, null));
+        addItem(new WatchUi.ToggleMenuItem(str($.Rez.Strings.setReadouts), null, :readouts,
+            getBool("readouts", true), null));
         addItem(new WatchUi.MenuItem(str($.Rez.Strings.setPalette), paletteLabel(), :palette, null));
         addItem(new WatchUi.MenuItem(str($.Rez.Strings.setLang), langLabel(), :langMode, null));
         addItem(new WatchUi.ToggleMenuItem(str($.Rez.Strings.setBlink), null, :blink,
@@ -94,6 +96,8 @@ class SettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
             item.setSubLabel(SettingsMenu.langLabel());
         } else if (id == :blink and item instanceof WatchUi.ToggleMenuItem) {
             Application.Properties.setValue("blink", item.isEnabled());
+        } else if (id == :readouts and item instanceof WatchUi.ToggleMenuItem) {
+            Application.Properties.setValue("readouts", item.isEnabled());
         }
         WatchUi.requestUpdate();
     }

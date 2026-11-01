@@ -177,6 +177,7 @@ the wake flags. **When in doubt, render less.**
 | `curveMode` | number, 0 | 0 = indicators, 1 = decorative (full curves, no readouts) |
 | `leftMetric` | number, 1 | `Metrics`: 0 steps to goal, 1 active minutes today, 2 battery |
 | `rightMetric` | number, 2 | same |
+| `readouts` | boolean, true | captions + percent values under the curves (indicator mode only) |
 | `palette` | number, 0 | index into `Theme.PALETTES` (0 = design turquoise/pink) |
 | `langMode` | number, 0 | 0 Auto, 1 English, 2 Russian |
 | `blink` | boolean, true | dots blink after wake |
