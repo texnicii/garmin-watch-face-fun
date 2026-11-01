@@ -9,22 +9,22 @@
     <string id="capActiveRu">АКТИВН.</string>
     <string id="capBatteryRu">ЗАРЯД</string>
 
-    <!-- Weekday names (1=Sun..7=Sat, so dow0=Sunday). UPPERCASE — NeonDate subset. -->
-    <string id="dow0">SUNDAY</string>
-    <string id="dow1">MONDAY</string>
-    <string id="dow2">TUESDAY</string>
-    <string id="dow3">WEDNESDAY</string>
-    <string id="dow4">THURSDAY</string>
-    <string id="dow5">FRIDAY</string>
-    <string id="dow6">SATURDAY</string>
+    <!-- Weekday abbreviations (1=Sun..7=Sat, so dow0=Sunday). UPPERCASE — NeonDate subset. -->
+    <string id="dow0">SUN</string>
+    <string id="dow1">MON</string>
+    <string id="dow2">TUE</string>
+    <string id="dow3">WED</string>
+    <string id="dow4">THU</string>
+    <string id="dow5">FRI</string>
+    <string id="dow6">SAT</string>
 
-    <string id="dow0Ru">ВОСКРЕСЕНЬЕ</string>
-    <string id="dow1Ru">ПОНЕДЕЛЬНИК</string>
-    <string id="dow2Ru">ВТОРНИК</string>
-    <string id="dow3Ru">СРЕДА</string>
-    <string id="dow4Ru">ЧЕТВЕРГ</string>
-    <string id="dow5Ru">ПЯТНИЦА</string>
-    <string id="dow6Ru">СУББОТА</string>
+    <string id="dow0Ru">ВС</string>
+    <string id="dow1Ru">ПН</string>
+    <string id="dow2Ru">ВТ</string>
+    <string id="dow3Ru">СР</string>
+    <string id="dow4Ru">ЧТ</string>
+    <string id="dow5Ru">ПТ</string>
+    <string id="dow6Ru">СБ</string>
 
     <!-- Month abbreviations (1=Jan..12=Dec, mon0=January) -->
     <string id="mon0">JAN</string>

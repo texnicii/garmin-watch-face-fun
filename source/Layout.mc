@@ -69,11 +69,12 @@ class Layout {
 
         yDate  = py(96.0);
         yTime  = py(162.0);
-        // Design baselines are 384 / 404; with the 1.3x readout fonts
-        // (tools/fonts TEXT_SCALE) the pair moves to keep the design's ~7 px
-        // gap between caption and value while clearing the curve glow above.
-        yCap   = py(380.0);
-        yVal   = py(405.0);
+        // Design baselines are 384 / 404; with the readout fonts at
+        // TEXT_SCALE / BIG_SCALE (tools/fonts) the pair moves to keep the
+        // design's ~7 px gap between caption and value and clear the curve
+        // glow above.
+        yCap   = py(376.0);
+        yVal   = py(400.0);
         xLeft  = px(129.0);
         xRight = px(321.0);
 

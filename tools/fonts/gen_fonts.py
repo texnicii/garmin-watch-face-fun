@@ -6,8 +6,8 @@ Four fonts, each an AngelCode BMFont text `.fnt` + a grayscale (white-on-black)
 screen-resolution bucket (design px x screen_w / 450):
 
   NeonTime  digital clock              JetBrains Mono Light  (wght 300)  62px
-  NeonDate  weekday + date             JetBrains Mono Medium (wght 500)  13px, tracking 3  (x TEXT_SCALE)
-  NeonCap   curve captions             JetBrains Mono Medium (wght 500)  11px, tracking 2  (x TEXT_SCALE)
+  NeonDate  weekday + date             JetBrains Mono Medium (wght 500)  13px, tracking 3  (x BIG_SCALE)
+  NeonCap   curve captions             JetBrains Mono Medium (wght 500)  11px, tracking 2  (x BIG_SCALE)
   NeonVal   curve values (72%)         JetBrains Mono Medium (wght 500)  18px              (x TEXT_SCALE)
 
 The design (design/neon-rings/Neon.dc.html) names JetBrains Mono itself, which
@@ -47,17 +47,20 @@ TEXT_CHARS = (" 0123456789.·-"
 
 # The small readouts (date, captions, values) are drawn larger than the
 # design's 13/11/18 px for legibility on the wrist; size and tracking scale
-# together. The clock keeps the design size.
+# together. The clock keeps the design size. The date and captions get
+# BIG_SCALE (~1.5x TEXT_SCALE, user request); at that size the date only
+# fits with abbreviated weekday names, so the widest-string check uses them.
 TEXT_SCALE = 1.3
+BIG_SCALE = TEXT_SCALE * 1.5
 
 # (id, face name, wght, design px, design tracking px, glyphs, widest strings)
 FONTS = [
     ("NeonTime", "JetBrains Mono Light", 300, 62, 0, "0123456789:", ["00:00"]),
-    ("NeonDate", "JetBrains Mono Medium", 500, 13 * TEXT_SCALE, 3 * TEXT_SCALE, TEXT_CHARS,
-     ["ВОСКРЕСЕНЬЕ · 24 ОКТ", "WEDNESDAY · 24 SEP"]),
-    ("NeonCap", "JetBrains Mono Medium", 500, 11 * TEXT_SCALE, 2 * TEXT_SCALE, TEXT_CHARS,
+    ("NeonDate", "JetBrains Mono Medium", 500, 13 * BIG_SCALE, 3 * BIG_SCALE, TEXT_CHARS,
+     ["ЧТ · 24 ОКТ", "THU · 24 SEP"]),
+    ("NeonCap", "JetBrains Mono Medium", 500, 11 * BIG_SCALE, 2 * BIG_SCALE, TEXT_CHARS,
      ["АКТИВН.", "BATTERY"]),
-    ("NeonVal", "JetBrains Mono Medium", 500, 18 * TEXT_SCALE, 0, "0123456789%-", ["100%"]),
+    ("NeonVal", "JetBrains Mono Medium", 500, 18 * TEXT_SCALE, 0, "0123456789%-", ["999%"]),
 ]
 
 

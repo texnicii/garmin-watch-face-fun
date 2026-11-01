@@ -7,13 +7,14 @@ Generates the bitmap fonts the Fun Bra face draws with
 | Font | Role | Face | design px @450 | tracking | glyphs |
 |---|---|---|---|---|---|
 | `NeonTime` | clock | JetBrains Mono Light (wght 300) | 62 | 0 | `0–9 :` |
-| `NeonDate` | weekday · date | JetBrains Mono Medium (500) | 13 × 1.3 | 3 × 1.3 | space `0–9 . · -`, A–Z, А–ЯЁ |
-| `NeonCap` | curve captions | JetBrains Mono Medium (500) | 11 × 1.3 | 2 × 1.3 | same as NeonDate |
+| `NeonDate` | weekday abbrev · date | JetBrains Mono Medium (500) | 13 × 1.95 | 3 × 1.95 | space `0–9 . · -`, A–Z, А–ЯЁ |
+| `NeonCap` | curve captions | JetBrains Mono Medium (500) | 11 × 1.95 | 2 × 1.95 | same as NeonDate |
 | `NeonVal` | curve values | JetBrains Mono Medium (500) | 18 × 1.3 | 0 | `0–9 % -` |
 
-The small readouts are drawn `TEXT_SCALE` = 1.3× the design size for legibility
-(the clock is not scaled). Changing it? Re-check the caption/value baselines in
-`source/Layout.mc`.
+The small readouts are drawn larger than design for legibility (the clock is
+not scaled): values `TEXT_SCALE` = 1.3×, date + captions `BIG_SCALE` = 1.95×
+(~1.5× the old size — at that scale the date needs abbreviated weekday names).
+Changing either? Re-check the caption/value baselines in `source/Layout.mc`.
 
 Each is a Connect IQ bitmap font (AngelCode BMFont `.fnt` + grayscale
 white-on-black `.png`), sized `round(px · screen_w / 450)` per resolution
